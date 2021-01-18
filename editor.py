@@ -32,7 +32,7 @@ class Editor:
 
 
     def addBlurredBackground(self):
-        #shameless copy of great function on stack overflow
+        # very nice looking blur
         OUTPUT_WIDTH = 1280
         OUTPUT_HEIGHT = 720
         for video in os.listdir(self.path+"/video_only/"):
