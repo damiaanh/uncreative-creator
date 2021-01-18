@@ -63,8 +63,3 @@ class Editor:
         random.shuffle(videos)
         ffmpeg.concat(*videos, unsafe=True).output(self.path + "/edited.mp4").run()
 
-if __name__ == "__main__":
-    date = date.today().strftime("%b-%d-%Y")
-    print("Today is {i}. starting new cycle...".format(i=date))
-    path = os.getcwd()+"/files/" + date
-    Editor(path)
